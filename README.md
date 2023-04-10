@@ -1,3 +1,3 @@
-# hello-world
+# MyProjects
 here will be my scripts and bot codes, as well as various experiments.
-Subsequently, I will rename the repository and start adding real projects, but in the meantime I am undergoing training from GitHub.
+Subsequently, I will start adding real projects, but in the meantime I am undergoing training from MySql and GitHub.
