@@ -129,13 +129,13 @@ def processing_requests_from_buttons(call):
         question = "That's right?"
         bot.send_message(call.message.chat.id, text=question, reply_markup=keyboard)
     elif call.data == "yes":
-        bot.send_message(call.message.chat.id, "what is your name?")
+        bot.send_message(call.message.chat.id, "what is your name?") # find out the name
         bot.register_next_step_handler(call.message, yes)
     elif call.data == "no":
         bot.send_message(call.message.chat.id, "Try again: /start")
 
 @bot.message_handler(content_types=['text', 'photo'])
-def yes(message):
+def yes(message): # find out the second_name
     global po, computer, name, second_name
     name = message.text
     bot.send_message(message.from_user.id, "What is your second name?")
