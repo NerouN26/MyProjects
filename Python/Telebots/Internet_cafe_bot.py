@@ -193,7 +193,7 @@ def Questions(message): # getting a question from a user
     bot.register_next_step_handler(message, Questions1)
 
 @bot.message_handler(content_types=['text', 'photo'])
-def Questions1(message):
+def Questions1(message): # sending a question from a user to an employee id
     global questiono, iid
     questiono = message.text
     iid = message.from_user.id
