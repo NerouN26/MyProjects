@@ -18,7 +18,7 @@ if message.text == "/start":
         question = "What do you want to do?"
         bot.send_message(message.from_user.id, text=question, reply_markup=keyboard)
 
-@bot.callback_query_handler(func=lambda call: True)
+@bot.callback_query_handler(func=lambda call: True) # a handler method that processes requests from all buttons in the code
 def processing_requests_from_buttons(call):
     global po, computer, name, second_name
     if call.data == "reservation":
