@@ -5,7 +5,8 @@ import webbrowser
 bot = telebot.TeleBot('TOKEN')
 
 @bot.message_handler(content_types=['text'])
-def start_reservation(message): # starting method    if message.text == "/start":
+def start_reservation(message): # starting method    
+if message.text == "/start":
         bot.send_photo(message.from_user.id, 'http://i2.wp.com/www.fisharcadesgames.com/wp-content/uploads/2019/12/222538z4g0nrncqzeve34e.jpg', caption="Hello, this is a telegram bot of the Internet cafe 'nekita', here you can leave a reservation for the date, time, place you need. You can also request a number by which you can contact the manager of the cafe or ask a question right here, you will receive a response from the telegram account of one of our employees.")
         keyboard = types.InlineKeyboardMarkup()
         key_reservation = types.InlineKeyboardButton(text='Зарезервировать место | reservation', callback_data='reservation')
