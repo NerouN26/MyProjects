@@ -142,7 +142,7 @@ def yes(message): # find out the second_name
     bot.register_next_step_handler(message, yes1)
 
 @bot.message_handler(content_types=['text', 'photo'])
-def yes1(message):
+def yes1(message): # sending a reservation request to the manager's id    
     global po, computer, name, second_name, date, clock, iid
     second_name = message.text
     iid = message.from_user.id
