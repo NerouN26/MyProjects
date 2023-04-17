@@ -152,7 +152,7 @@ def yes1(message): # sending a reservation request to the manager's id
     pass
 
 @bot.message_handler(content_types=['text', 'photo'])
-def reservation(message):
+def reservation(message): # getting the date
     global date, clock
     date = message.text
     bot.send_message(message.from_user.id, "Thank you, now tell me the time you want to come, for example '12:10'")
