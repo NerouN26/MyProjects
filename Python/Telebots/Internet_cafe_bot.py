@@ -2,8 +2,7 @@ import telebot
 from telebot import types, TeleBot
 import webbrowser
 
-bot = telebot.TeleBot('TOKEN')
-
+bot = telebot.TeleBot('TOKEN') # your token
 @bot.message_handler(content_types=['text'])
 def start_reservation(message): # starting method    
 if message.text == "/start":
