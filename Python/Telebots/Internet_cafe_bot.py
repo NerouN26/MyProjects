@@ -159,7 +159,7 @@ def reservation(message): # getting the date
     bot.register_next_step_handler(message, reservation_1)
 
 @bot.message_handler(content_types=['text', 'photo'])
-def reservation_1(message):
+def reservation_1(message): # getting the time and requesting the computer number     
     global date, clock
     clock = message.text
     bot.send_message(message.from_user.id, "Okay, now select the armored computer")
