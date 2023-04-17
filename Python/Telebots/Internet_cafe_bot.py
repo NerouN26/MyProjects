@@ -201,4 +201,4 @@ def Questions1(message): # sending a question from a user to an employee id
     bot.send_message(message.from_user.id, "Your question has been delivered")
     bot.send_message(message.from_user.id, "Press: /start")
     pass
-bot.polling(none_stop=True, interval=0)
+bot.polling(none_stop=True, interval=0) # looping the bot's work
