@@ -188,7 +188,7 @@ def reservation_1(message): # getting the time and requesting the computer numbe
     bot.send_message(message.from_user.id, text=question, reply_markup=keyboard)
 
 @bot.message_handler(content_types=['text', 'photo'])
-def Questions(message):
+def Questions(message): # getting a question from a user    
     bot.send_message(message.from_user.id, "Ask a question, I will send it to our employee")
     bot.register_next_step_handler(message, Questions1)
 
