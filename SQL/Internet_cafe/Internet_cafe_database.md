@@ -23,4 +23,4 @@ CREATE TABLE internet_cafe.internet_cafe_client (
   PRIMARY KEY (ID)
 );
 ```
-
+Here the values ​​of each column cannot be NULL. The ID column is a Primary key and uses Auto_Increment to automatically populate the ID numbering. [Data is loaded](Insert_internet_cafe_client.sql) into this table using INSERT INTO.
