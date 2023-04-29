@@ -11,7 +11,7 @@ This is a MySQL database that I created to demonstrate my current skills. It was
 ## Internet Cafe Client
 
 This table is for storing user data. This is the key table, which will be visible on the diagram.
-The [code for creating](SQL/internet_cafe/Create table internet_cafe_client.sql) this table looks like this:
+The [code for creating](SQL/internet_cafe/Create-table-internet_cafe_client) this table looks like this:
 ```
 CREATE TABLE internet_cafe.internet_cafe_client (
   ID int NOT NULL AUTO_INCREMENT,
