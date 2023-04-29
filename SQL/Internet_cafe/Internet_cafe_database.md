@@ -4,7 +4,7 @@ This is a MySQL database that I created to demonstrate my current skills. It was
 
 ### I used:
 * dbForge Studio 2020 for MySQL tool for writing code and queries, as well as editing the table itself through the built-in parameters of Alter Table.
-* MySQL workbench to visualize the result in the form of a Model (diagram).
+* MySQL workbench to visualize the result in the form of a Model(diagram).
 * MySQL command line client to fulfill requests.
 
 
