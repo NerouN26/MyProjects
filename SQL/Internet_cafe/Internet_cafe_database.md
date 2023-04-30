@@ -147,3 +147,57 @@ gives us:
 |   10 | Nekit_10    | Intel Xeon Platinum 8375C CPU @ 2.90GHz        |          10240 |     64 | RTX 3090 Ti GA102-350 1560Mhz 1860Mhz 24Gb GDDR6X      | vip    |     3 |
 
 
+## Internet Cafe Reserv
+
+This table has already appeared in the previous explanation. This table stores all online booking requests for the month. With its help, the staff of the Internet cafe can see which seats will be occupied and for how long. This will help when placing an order to customers who came to the institution itself.
+
+The [code for creating](Create_table_internet_cafe_client.sql) this table looks like this:
+```
+CREATE TABLE internet_cafe.internet_cafe_reserv (
+  ID int NOT NULL AUTO_INCREMENT,
+  Date datetime NOT NULL DEFAULT '2023-04-29 00:00:00',
+  Game_time_hour int NOT NULL DEFAULT 1,
+  User_ID int NOT NULL DEFAULT 0,
+  Name_user char(200) NOT NULL DEFAULT '',
+  User_code_comp int NOT NULL DEFAULT 1,
+  PRIMARY KEY (ID)
+)
+```
+
+ In this case, the code to create does not differ from the previous one. You can only notice that another new DATETIME data type is used here, which allows you to quickly fill in with the date and time of booking using the NOW() function in the [data insertion request](Insert_internet_cafe_reserv.sql).
+
+
+Request:
+```
+SELECT *
+FROM internet_cafe_PC;
+```
+gives us:
+
+| ID | Date                | Game_time_hour | User_ID | Name_user | User_code_comp |
+|----|---------------------|----------------|---------|-----------|----------------|
+|  1 | 2023-04-29 21:02:25 |              2 |      10 | Ronnie    |             10 |
+|  2 | 2023-04-29 21:02:25 |              3 |      16 | Carl      |              5 |
+|  3 | 2023-04-29 21:02:25 |              2 |      29 | Andrew    |              3 |
+|  4 | 2023-04-29 21:02:25 |              3 |       5 | Scott     |              5 |
+|  5 | 2023-04-29 21:02:25 |              4 |      25 | Bruce     |              2 |
+|  6 | 2023-04-29 21:02:25 |              1 |      17 | William   |              7 |
+|  7 | 2023-04-29 21:02:25 |              5 |      30 | Roy       |              5 |
+|  8 | 2023-04-29 21:02:25 |              5 |      13 | Sam       |              7 |
+|  9 | 2023-04-29 21:02:25 |              3 |      43 | Russell   |              8 |
+| 10 | 2023-04-29 21:02:25 |              6 |       2 | Kevin     |              2 |
+| 11 | 2023-04-29 21:02:25 |              5 |      39 | Anthony   |              3 |
+| 12 | 2023-04-29 21:02:25 |              6 |       1 | Josh      |              1 |
+| 13 | 2023-04-29 21:02:25 |              2 |       7 | Fred      |              7 |
+| 14 | 2023-04-29 21:02:25 |              5 |      37 | Jose      |              5 |
+| 15 | 2023-04-29 21:02:26 |              4 |       8 | William   |              8 |
+| 16 | 2023-04-29 21:02:26 |              3 |       4 | James     |              4 |
+| 17 | 2023-04-29 21:02:26 |              2 |      23 | Timothy   |              1 |
+| 18 | 2023-04-29 21:02:26 |              1 |       3 | Mike      |              3 |
+| 19 | 2023-04-29 21:02:26 |              1 |      31 | Antonio   |              7 |
+| 20 | 2023-04-29 21:02:26 |              4 |      49 | Charles   |              3 |
+| 21 | 2023-04-29 21:02:26 |              4 |      33 | James     |              5 |
+| 22 | 2023-04-29 21:02:26 |              3 |      15 | Calvin    |              1 |
+| 23 | 2023-04-29 21:02:26 |              5 |      18 | Jacob     |             10 |
+| 24 | 2023-04-29 21:02:26 |              2 |       6 | Jonathan  |              6 |
+| 25 | 2023-04-29 21:02:26 |              1 |      46 | Raymond   |              7 |
