@@ -88,7 +88,7 @@ gives us:
 
 ## Internet Cafe PC
 
-This table contains data about computers located in the Internet cafe. It can also be auxiliary if you need, for example, to calculate the revenue from vip and pro computers, referring to their booking requests for the last month.
+This table contains data about computers located in the Internet cafe. It can also be auxiliary if you need, for example, to calculate the revenue from vip and pro computers, referring to their booking requests for the last month. Where is the rate per hour 3$.
 
 The request for this will look like this:
 ```
