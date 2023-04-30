@@ -202,3 +202,14 @@ gives us:
 | 23 | 2023-04-29 21:02:26 |              5 |      18 | Jacob     |             10 |
 | 24 | 2023-04-29 21:02:26 |              2 |       6 | Jonathan  |              6 |
 | 25 | 2023-04-29 21:02:26 |              1 |      46 | Raymond   |              7 |
+
+
+## And at the end
+
+After visualizing the created tables using MySQL Workbench, I got the following diagram:
+
+![Diagram](Internet_Cafe_Model.png)
+
+On it you can see the relationships between the tables and how the above table internet_cafe_client is really the key one.
+
+### Thank you for reading this documentation!
