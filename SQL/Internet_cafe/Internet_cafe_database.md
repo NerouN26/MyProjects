@@ -165,6 +165,7 @@ CREATE TABLE internet_cafe.internet_cafe_reserv (
 ```
 
  In this case, the code to create does not differ from the previous one. You can only notice that another new DATETIME data type is used here, which allows you to quickly fill in with the date and time of booking using the NOW() function in the [data insertion request](Insert_internet_cafe_reserv.sql).
+ To quickly add data to this table, I decided to use INSERT INTO TABLE SELECT and selection FROM internet_cafe_client ORDER BY RAND() LIMIT 1, which allows you to select random values (1 from each column) from the internet_cafe_client table and add them to the desired table. This allowed me to greatly reduce the time for entering data. 
 
 
 Request:
