@@ -87,3 +87,63 @@ gives us:
 
 
 ## Internet Cafe PC
+
+This table contains data about computers located in the Internet cafe. It can also be auxiliary if you need, for example, to calculate the revenue from vip and pro computers, referring to their booking requests for the last month.
+
+The request for this will look like this:
+```
+SELECT 3*sum(Game_time_hour) AS Proceeds
+FROM internet_cafe_reserv 
+WHERE user_code_comp IN (
+  SELECT Code 
+  FROM internet_cafe_pc
+  WHERE Status IN ('pro', 'vip')
+);
+```
+With the result:
+
+| Proceeds |
+|----------|
+|111       |
+
+
+The [code for creating](Create_table_internet_cafe_PC.sql) this table looks like this:
+```
+CREATE TABLE internet_cafe.internet_cafe_pc (
+  Code int NOT NULL AUTO_INCREMENT,
+  Server_Name char(200) NOT NULL DEFAULT '',
+  CPU char(200) NOT NULL DEFAULT '',
+  Main_Memory_Gb int NOT NULL DEFAULT 500,
+  RAM_Gb int NOT NULL DEFAULT 8,
+  GPU char(200) NOT NULL DEFAULT '',
+  Status enum ('def', 'pro', 'vip') DEFAULT 'def',
+  Users int NOT NULL DEFAULT 0,
+  PRIMARY KEY (Code)
+)
+```
+
+It differs from the previous one by using a different data type for writing text, has a special ENUM data type that is well suited for entering computer status and has DEFAULT values.
+
+[Data is loaded](Insert_internet_cafe_PC.sql) into the table no longer through INSERT INTO TABLE VALUES, but instead of VALUES, SELECT is used to enter data through an aggregate function applied to another table.
+
+Request:
+```
+SELECT *
+FROM internet_cafe_PC;
+```
+gives us:
+
+| Code | Server_Name | CPU                                            | Main_Memory_Gb | RAM_Gb | GPU                                                    | Status | Users |
+|------|-------------|------------------------------------------------|----------------|--------|--------------------------------------------------------|--------|-------|
+|    1 | Nekit_1     | AMD Ryzen Threadripper 3990X 64-Core Processor |           2048 |     16 |  RTX 2080 Ti  TU102-300   1350Mhz 1545Mhz   11Gb GDDR6 | pro    |     5 |
+|    2 | Nekit_2     | AMD EPYC 7R13 48-Core Processor                |           1024 |      8 |  GTX 1650 TU117-300 1485Mhz 1665Mhz 4Gb GDDR6          | def    |     5 |
+|    3 | Nekit_3     | Intel Core I7-13700KF                          |           1024 |      8 |  GTX 980 Ti GM200-310 1000Mhz 1076Mhz 6Gb GDDR5        | def    |     5 |
+|    4 | Nekit_4     | AMD Ryzen 5 7600X 6-Core Processor             |           1024 |      8 |  GTX 1080 Ti GP102-350 1480Mhz 1582Mhz 11Gb GDDR5X     | def    |     4 |
+|    5 | Nekit_5     | AMD Ryzen 3 1200 Quad-Core Processor           |           1024 |      8 | GTX 1050 Ti GP107-400 1291Mhz 1392Mhz 4Gb GDDR5        | def    |     7 |
+|    6 | Nekit_6     | AMD Ryzen 7 5700X 8-Core Processor             |           2048 |     16 | RTX 2060 TU106-300 1365Mhz 1680Mhz 6Gb GDDR6           | pro    |     4 |
+|    7 | Nekit_7     | Intel Xeon CPU E5-2680 v3 @ 2.50GHz            |           2048 |     16 | RTX 2080 Super TU104-450 1350Mhz 1545Mhz 8Gb GDDR6     | pro    |     6 |
+|    8 | Nekit_8     | AMD Ryzen 7 7700X 8-Core Processor             |           2048 |     32 | RTX 3060 GA106-300 1320Mhz 1777Mhz 8/16Gb GDDR6        | pro    |     6 |
+|    9 | Nekit_9     | AMD Ryzen 9 3950X 16-Core Processor            |          10240 |     64 | RTX 3080 Ti GA102-225 1365Mhz 1665Mhz 12Gb GDDR6X      | vip    |     5 |
+|   10 | Nekit_10    | Intel Xeon Platinum 8375C CPU @ 2.90GHz        |          10240 |     64 | RTX 3090 Ti GA102-350 1560Mhz 1860Mhz 24Gb GDDR6X      | vip    |     3 |
+
+
