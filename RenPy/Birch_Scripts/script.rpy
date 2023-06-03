@@ -1,5 +1,3 @@
-﻿# Вы можете расположить сценарий своей игры в этом файле.
-
 # Определение персонажей игры.
 define n = Character('Никита', color="#c8ffc8")
 define d = Character('Дима', color="#f08a5d")
@@ -21,19 +19,8 @@ define lu = Character('Любер', color="#17b978")
 define mad = Character('Мама Димы', color="#ff003e")
 define man = Character('Мама Никиты', color="#ff003e")
 define din = Character('Дима и Никита', color="#fcfefe")
-define pot = []
-define daf = 0
-define iko = 3
-image bomb_in = Movie(play="C:/Users/user/Desktop/Проекты Python/den/game/bomb_in.webm")
-image valve = Movie(play="C:/Users/user/Desktop/Проекты Python/den/game/valve.mp4")
-image ea_g = Movie(play="C:/Users/user/Desktop/Проекты Python/den/game/ea_g.mp4")
 
-# Вместо использования оператора image можете просто
-# складывать все ваши файлы изображений в папку images.
-# Например, сцену bg room можно вызвать файлом "bg room.png",
-# а eileen happy — "eileen happy.webp", и тогда они появятся в игре.
 
-# Игра начинается здесь:
 label start:
     stop music
     play movie "ea_gw.webm"
@@ -146,13 +133,9 @@ label start:
         "hyperpop luv":
             play music "hyperpop luv.mp3"
             d "О да. Это она!"
-            init python:
-                daf = 1
         "Дворы":
             play music "Дворы.mp3"
-            d "Да, вот это настальгия."
-            init python:
-                daf = 3
+            d "Да, вот оно!"
         "La Seine":
             play music "La Seine.mp3"
             d "Привет Стоговой, а так нормас"
