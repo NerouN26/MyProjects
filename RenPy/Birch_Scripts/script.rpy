@@ -1868,6 +1868,6 @@ label start:
         "На рабочий стол":
             python:
                 import os
-                os.system("taskkill /im pythonw.exe")
+                os.system("taskkill /im pythonw.exe") #Процесс предварительного запуска проекта, нужно будет заменить на процесс скомпиоированной версии
 
     return
