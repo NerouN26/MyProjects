@@ -1414,28 +1414,18 @@ label start:
         "hyperpop luv":
             play music "hyperpop luv.mp3"
             d "О да. Это она!"
-            init python:
-                daf = 1
         "Дворы":
             play music "Дворы.mp3"
             d "Да, вот это настальгия."
-            init python:
-                daf = 3
         "La Seine":
             play music "La Seine.mp3"
             d "Привет Стоговой, а так нормас"
-            init python:
-                daf = 4
         "Hotline Miami 2 OST Decade Dance":
             play music "Hotline Miami 2 OST Decade Dance.mp3"
             d "Энергичненько"
-            init python:
-                daf = 5
         "Hotline Miami - Dust":
             play music "Hotline Miami - Dust.mp3"
             d "Спокойненько."
-            init python:
-                daf = 6
         "Страсть к курению":
             play music "Страсть к курению.mp3"
             d "О, прям в душу"
