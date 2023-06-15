@@ -7,9 +7,9 @@ _____________________________
 Здесь будут мои скрипты ботов, а также различные эксперименты.
 
 ## English language
-# Python 
-### [Internet_Cafe_bot](Python/Telebots/Internet_cafe_bot.md)
-# SQL
+### Python 
+###[Internet_Cafe_bot](Python/Telebots/Internet_cafe_bot.md)
+### SQL
 ### [Internet_Cafe_Database](SQL/Internet_cafe/Internet_cafe_database.md)
-# Renpy
+### Renpy
 ### [Birch](RenPy/Birch_Scripts/Birch_Doc.md)
