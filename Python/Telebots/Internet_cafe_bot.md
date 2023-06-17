@@ -8,3 +8,6 @@ Internet_cafe_bot is my first fake project to demonstrate skills.
 * Processes values from keyboard.
 * Has its own project on [repl.it](https://replit.com/) and a monitor on the service [UpTimerRobot](https://uptimerobot.com/) to bypass the algorithm repl.it by sending requests to a running script. This resets the counter before disabling the script and makes it work 24/7.
 * It can be updated and improved at any time.
+
+https://github.com/NerouN26/MyProjects/assets/122795813/22e46fe9-655a-48eb-a3e2-c42ab30c4737
+
