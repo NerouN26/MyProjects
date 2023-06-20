@@ -1,15 +1,15 @@
 # Birch
 
-## Idea
+## Идея
 
-This is my autobiographical novel, in which the plot is based on a real event, embellished with genre stylistics and some cliches.
+Это мой автобиографический роман, в котором сюжет основан на реальном событии, приукрашенном жанровой стилистикой и некоторыми штампами.
 
-At the time of the narration, my friend Dima and I were 14 years old. The key location in the plot was the so-called "Mountain", which was formed as a result of the foundation of a sand quarry in our area. It became a key location because it had an unusual environment for the city, there was a real natural oasis among the bustle of the city. In the summer there was a lot of grass and high straw, looking at what from a certain angle it seemed that you were far away from the city.
+На момент повествования нам с моим другом Димой было по 14 лет. Ключевым местом на участке была так называемая "гора", которая образовалась в результате основания песчаного карьера в нашем районе. Это стало ключевым местом, потому что здесь была необычная для города среда, настоящий природный оазис среди городской суеты. Летом здесь было много травы и высокой соломы, глядя на которую под определенным углом казалось, что находишься далеко от города.
 
-At the very beginning, it was conceived as a small story that could be cheerfully presented to our classmates in the form of a novella. But then I decided not to abandon it and turn it into a real memoir about my significant events in life.
+В самом начале это было задумано как небольшая история, которую можно было бы весело преподнести нашим одноклассникам в виде новеллы. Но потом я решил не отказываться от нее и превратить в настоящие мемуары о моих значимых событиях в жизни.
 
-## Thoughts on adding DLS
+## Идея о добавлении DLS
 
-As mentioned earlier, I didn't want to give up this novel, and so I decided to make various DLCs, each of which will have one significant event in my life. I decided to do them as events unfolded, and accordingly I started from the earliest years of my life.
+Как упоминалось ранее, я не хотел отказываться от этого романа, и поэтому я решил сделать различные дополнения, каждое из которых будет связано с одним значительным событием в моей жизни. Я решил заниматься ими по мере развития событий и, соответственно, начал с самых ранних лет своей жизни.
 
-### May 2012
+### Май 2012

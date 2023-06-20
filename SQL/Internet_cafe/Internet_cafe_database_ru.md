@@ -10,8 +10,8 @@
 
 ## Internet Cafe Client
 
-This table is for storing user data. This is the key table, which will be visible on the diagram.
-The [code for creating](Create_table_internet_cafe_client.sql) this table looks like this:
+Эта таблица предназначена для хранения пользовательских данных. Это ключевая таблица, которая будет видна на диаграмме.
+[Код для создания](Create_table_internet_cafe_client.sql) этой таблицы выглядит следующим образом:
 ```
 CREATE TABLE internet_cafe.internet_cafe_client (
   ID int NOT NULL AUTO_INCREMENT,
@@ -23,14 +23,14 @@ CREATE TABLE internet_cafe.internet_cafe_client (
   PRIMARY KEY (ID)
 );
 ```
-Here the values ​​of each column cannot be NULL. The ID column is a Primary key and uses Auto_Increment to automatically populate the ID numbering. [Data is loaded](Insert_internet_cafe_client.sql) into this table using INSERT INTO.
+Здесь значения каждого столбца не могут быть нулевыми. Столбец ID является первичным ключом и использует Auto_Increment для автоматического заполнения нумерации. [Данные загружаются](Insert_internet_cafe_client.sql) в эту таблицу с помощью INSERT INTO.
 
-Request:
+Запрос:
 ```
 SELECT *
 FROM internet_cafe_client;
 ```
-gives us:
+Выдаст нам:
 
 | ID | Name        | Email                               | Password   | Key_word    | Code_Comp |
 |----|-------------|-------------------------------------|------------|-------------|-----------|
@@ -88,9 +88,9 @@ gives us:
 
 ## Internet Cafe PC
 
-This table contains data about computers located in the Internet cafe. It can also be auxiliary if you need, for example, to calculate the revenue from vip and pro computers, referring to their booking requests for the last month. Where is the rate per hour 3$.
+Эта таблица содержит данные о компьютерах, расположенных в интернет-кафе. Он также может быть вспомогательным, если вам нужно, например, рассчитать выручку от компьютеров vip и pro, ссылаясь на их запросы на бронирование за последний месяц. Где ставка в час - 3 доллара.
 
-The request for this will look like this:
+Запрос на это будет выглядеть следующим образом:
 ```
 SELECT 3*sum(Game_time_hour) AS Proceeds
 FROM internet_cafe_reserv 
@@ -100,14 +100,14 @@ WHERE user_code_comp IN (
   WHERE Status IN ('pro', 'vip')
 );
 ```
-With the result:
+С результатом:
 
 | Proceeds |
 |----------|
 |111       |
 
 
-The [code for creating](Create_table_internet_cafe_PC.sql) this table looks like this:
+[Код для создания](Create_table_internet_cafe_PC.sql) этой таблицы выглядит следующим образом:
 ```
 CREATE TABLE internet_cafe.internet_cafe_pc (
   Code int NOT NULL AUTO_INCREMENT,
@@ -122,16 +122,16 @@ CREATE TABLE internet_cafe.internet_cafe_pc (
 )
 ```
 
-It differs from the previous one by using a different data type for writing text, has a special ENUM data type that is well suited for entering computer status and has DEFAULT values.
+Он отличается от предыдущего тем, что использует другой тип данных для ввода текста, имеет специальный тип данных ENUM, который хорошо подходит для ввода состояния компьютера и имеет значения по умолчанию.
 
-[Data is loaded](Insert_internet_cafe_PC.sql) into the table no longer through INSERT INTO TABLE VALUES, but instead of VALUES, SELECT is used to enter data through an aggregate function applied to another table.
+[Данные загружаются](Insert_internet_cafe_PC.sql)в таблицу больше не через INSERT INTO TABLE VALUES, но вместо значений для ввода данных с помощью агрегатной функции, применяемой к другой таблице, используется SELECT.
 
-Request:
+Запрос:
 ```
 SELECT *
 FROM internet_cafe_PC;
 ```
-gives us:
+Выдает нам:
 
 | Code | Server_Name | CPU                                            | Main_Memory_Gb | RAM_Gb | GPU                                                    | Status | Users |
 |------|-------------|------------------------------------------------|----------------|--------|--------------------------------------------------------|--------|-------|
@@ -149,9 +149,9 @@ gives us:
 
 ## Internet Cafe Reserv
 
-This table has already appeared in the previous explanation. This table stores all online booking requests for the month. With its help, the staff of the Internet cafe can see which seats will be occupied and for how long. This will help when placing an order to customers who came to the institution itself.
+Эта таблица уже приводилась в предыдущем пояснении. В этой таблице хранятся все запросы на онлайн-бронирование за месяц. С его помощью сотрудники интернет-кафе могут видеть, какие места будут заняты и как долго. Это поможет при оформлении заказа клиентам, пришедшим в само заведение.
 
-The [code for creating](Create_table_internet_cafe_client.sql) this table looks like this:
+[Код для создания](Create_table_internet_cafe_client.sql) этой таблицы выглядит следующим образом:
 ```
 CREATE TABLE internet_cafe.internet_cafe_reserv (
   ID int NOT NULL AUTO_INCREMENT,
@@ -164,16 +164,17 @@ CREATE TABLE internet_cafe.internet_cafe_reserv (
 )
 ```
 
- In this case, the code to create does not differ from the previous one. You can only notice that another new DATETIME data type is used here, which allows you to quickly fill in with the date and time of booking using the NOW() function in the [data insertion request](Insert_internet_cafe_reserv.sql).
- To quickly add data to this table, I decided to use INSERT INTO TABLE SELECT and selection FROM internet_cafe_client ORDER BY RAND() LIMIT 1, which allows you to select random values (1 from each column) from the internet_cafe_client table and add them to the desired table. This allowed me to greatly reduce the time for entering data. 
+В этом случае создаваемый код ничем не отличается от предыдущего. Вы можете только заметить, что здесь используется другой новый тип данных DATETIME, который позволяет вам быстро ввести дату и время
+бронирования, используя функцию NOW() в [ввод данных](Insert_internet_cafe_reserv.sql).
+Чтобы быстро добавить данные в эту таблицу, я решил использовать INSERT INTO TABLE SELECT и selection FROM internet_cafe_client ORDER BY RAND() LIMIT 1, который позволяет выбирать случайные значения (по 1 из каждого столбца) из таблицы internet_cafe_client и добавлять их в нужную таблицу. Это позволило мне значительно сократить время на ввод данных.
 
 
-Request:
+Запрос:
 ```
 SELECT *
 FROM internet_cafe_PC;
 ```
-gives us:
+Выдает нам:
 
 | ID | Date                | Game_time_hour | User_ID | Name_user | User_code_comp |
 |----|---------------------|----------------|---------|-----------|----------------|
@@ -204,12 +205,12 @@ gives us:
 | 25 | 2023-04-29 21:02:26 |              1 |      46 | Raymond   |              7 |
 
 
-## And at the end
+## И в заключение
 
-After visualizing the created tables using MySQL Workbench, I got the following diagram:
+После визуализации созданных таблиц с помощью MySQL Workbench я получил следующую диаграмму:
 
-![Diagram](Internet_Cafe_Model.png)
+![Диограмма](Internet_Cafe_Model.png)
 
-On it you can see the relationships between the tables and how the above table internet_cafe_client is really the key one.
+На нем вы можете увидеть взаимосвязи между таблицами и то, что приведенная выше таблица internet_cafe_client действительно является ключевой.
 
-### Thank you for reading this documentation!
+### Благодарим вас за прочтение этой документации!
