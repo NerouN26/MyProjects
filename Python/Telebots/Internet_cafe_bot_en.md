@@ -1,7 +1,7 @@
 # Internet_Cafe_bot
 ### Link internet cafe bot: [Internet_cafe_nekita_bot](http://t.me/Internet_cafe_nekita_bot)
 
-Internet_cafe_bot is my first fake project to demonstrate skills.
+Internet_cafe_bot is my first demonstration project to demonstrate skills.
 
 ### he:
 * receives, processes and sends information to specified user.
