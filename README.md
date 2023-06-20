@@ -1,6 +1,5 @@
 # MyProjects [![Open Source Love](https://firstcontributions.github.io/open-source-badges/badges/open-source-v1/open-source.png)](https://github.com/firstcontributions/open-source-badges)
 Here will be my scripts and bot codes, as well as various experiments.
-Now I am learning to work in MySql and GitHub.
 
 _____________________________
 
