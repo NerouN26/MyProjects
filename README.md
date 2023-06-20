@@ -17,8 +17,8 @@ _____________________________
 
 ## Русский язык
 ### Python
-
+### [Internet_Cafe_bot](Python/Telebots/Internet_cafe_bot_ru.md)
 ### SQL
-
+### [Internet_Cafe_Database](SQL/Internet_cafe/Internet_cafe_database_ru.md)
 ### RenPy
-
+### [Birch](RenPy/Birch_Scripts/Birch_Doc_ru.md)
