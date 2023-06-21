@@ -1,5 +1,5 @@
 # Bot_for_an_investment_company
-### Link internet cafe bot: Добавить по окончанию разработки
+### Link internet cafe bot: [Nekit_investment_company_bot](http://t.me/Nekit_investment_company_bot)
 
 So I decided to fulfill one order that interested me on one russian freelance exchange, see how it is and everything is going.
 
@@ -14,4 +14,4 @@ Directly TS:
 
 Also here is the [pdf format](TS_on_the_bot.pdf)
 
-## investment_company_bot
+## Nekit_investment_company_bot

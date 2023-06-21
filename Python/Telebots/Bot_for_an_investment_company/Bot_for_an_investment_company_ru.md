@@ -1,5 +1,5 @@
 # Bot_for_an_investment_company
-### Link internet cafe bot: Добавить по окончанию разработки
+### Link internet cafe bot: [Nekit_investment_company_bot](http://t.me/Nekit_investment_company_bot)
 
 Поэтому я решил выполнить заинтересовавший меня заказ на одной российской бирже фриланса, посмотреть, как там дела и как все продвигается.
 
@@ -14,4 +14,7 @@
 
 Так же вот [pdf формат](TS_on_the_bot.pdf)
 
-## investment_company_bot
+## Nekit_investment_company_bot
+
+Итак, на часах 20:20 и бот готов, а начал я в 14:00
+Что ж, я считаю получилось весьма неплохо. Сначала
