@@ -6,7 +6,7 @@ So I decided to fulfill one order that interested me on one russian freelance ex
 ![order](order.png)
 
 The customer writes: You need to develop a bot for an investment company with an attached TS.
-Since the order condition did not specify the order completion time, I set myself the task of completing it in 1 week.
+Since the order condition did not specify the order completion time, I set myself the task of completing it in 1 day.
 
 Directly TS:
 
