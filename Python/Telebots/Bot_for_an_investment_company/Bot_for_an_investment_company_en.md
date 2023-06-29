@@ -17,6 +17,9 @@ Also here is the [pdf format](TS_on_the_bot.pdf)
 ## Nekit_investment_company_bot
 
 So, it's 20:20 and the bot is ready, and I started at 14:00
+
+
+
 Well, I think it turned out quite well. First, I started [creating a table](create_table_Invest_comp.sql) based on the data in the message with the lot characteristics and mandatory data when describing the existing object. Well, it turned out a lot of columns...
 
 | id | position                                  | area       | full_price      | current_price | resale_price  | projected_price_no_repair | projected_price_whith_repair | planned_profitability | yearly | implementation_period | amount_of_attraction     | iden   | summa   | opisanie                     | status  |
