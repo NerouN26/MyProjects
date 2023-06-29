@@ -1,5 +1,5 @@
-# Bot_for_an_investment_company
-### Link internet cafe bot: [Nekit_investment_company_bot](http://t.me/Nekit_investment_company_bot)
+# Бот_Для_Инвестиционной_Компании
+### Ссылка на бота для инвестиционной компании: [Nekit_investment_company_bot](http://t.me/Nekit_investment_company_bot)
 
 Я решил выполнить заинтересовавший меня заказ на одной российской бирже фриланса, посмотреть, как там дела делаются.
 
