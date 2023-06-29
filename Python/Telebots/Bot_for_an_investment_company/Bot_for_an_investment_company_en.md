@@ -18,7 +18,7 @@ Also here is the [pdf format](TS_on_the_bot.pdf)
 
 So, it's 20:20 and the bot is ready, and I started at 14:00
 
-
+https://github.com/NerouN26/MyProjects/assets/122795813/57702522-11a1-4b76-8708-99e0b9fc3dee
 
 Well, I think it turned out quite well. First, I started [creating a table](create_table_Invest_comp.sql) based on the data in the message with the lot characteristics and mandatory data when describing the existing object. Well, it turned out a lot of columns...
 
@@ -26,9 +26,17 @@ Well, I think it turned out quite well. First, I started [creating a table](crea
 ----|-------------------------------------------|------------|-----------------|---------------|---------------|---------------------------|------------------------------|-----------------------|--------|-----------------------|--------------------------|--------|---------|------------------------------|---------|
 |  1 | Cанкт-Петербург, ул.Замшина, д.31, корп.4 | 17.8 кв.м. | 2.142 млн. руб. | 190 тыс. руб. | 315 тыс. руб. | 2.8 млн. руб.             | 3.2 млн. руб.                | 20-24%                | 36-41% | 3-4 мес.              | от 0.3 до 1.15 млн. руб. | Nikita | 1000000 | помещение площадью 17,8 кв.м | нежилое |
 
-Next, I registered all the selection requests, formatted the strings and saved them to a list, the data from which goes to the object message. I wrote a yield calculator using the same data from the table and began to rewrite all the messages from the "Варианты инвестирования" section and attach the corresponding buttons to them.
+Next, I registered all the selection requests, formatted the strings and saved them to a list, the data from which goes to the object message.
+
+https://github.com/NerouN26/MyProjects/assets/122795813/10c97030-777c-4106-ab44-e06fb864137a
+
+I wrote a yield calculator using the same data from the table and began to rewrite all the messages from the "Варианты инвестирования" section and attach the corresponding buttons to them.
+
+https://github.com/NerouN26/MyProjects/assets/122795813/79048f57-3e48-477f-af4d-91691f70ea29
 
 I also took care of the "Мои объекты" section in advance. In the same MySQL table, I added 4 additional columns with the necessary data, included respectively in 1 and the same record. In a good way, it was necessary to create 2 tables with separate attachments, so that later it would be easier for the administrator to enter separate data, but this option is also suitable for demonstration.
+
+https://github.com/NerouN26/MyProjects/assets/122795813/d6358725-c598-4c66-836e-fc4741f71e90
 
 ### In conclusion
 It is safe to say that the order was successfully completed on time.
