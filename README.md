@@ -1,9 +1,9 @@
 # MyProjects [![Open Source Love](https://firstcontributions.github.io/open-source-badges/badges/open-source-v1/open-source.png)](https://github.com/firstcontributions/open-source-badges)
-Here will be my scripts and bot codes, as well as various experiments.
+Here will be my scripts and all sorts of projects
 
 _____________________________
 
-Здесь будут мои скрипты ботов, а также различные эксперименты.
+Здесь будут мои скрипты и всяческие проекты
 
 ## English language
 ### Python 
