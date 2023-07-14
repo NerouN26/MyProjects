@@ -13,6 +13,8 @@ _____________________________
 ### [Internet_Cafe_Database](SQL/Internet_cafe/Internet_cafe_database_en.md)
 ### RenPy
 ### [Birch](RenPy/Birch_Scripts/Birch_Doc_en.md)
+### Web Development
+### [MaksyMarket](Web_development/MaksyMaret/MaksyMarket_en.md)
 
 _____________________________
 
@@ -24,3 +26,5 @@ _____________________________
 ### [Internet_Cafe_Database](SQL/Internet_cafe/Internet_cafe_database_ru.md)
 ### RenPy
 ### [Birch](RenPy/Birch_Scripts/Birch_Doc_ru.md)
+### Веб разработка
+### [MaksyMarket](Web_development/MaksyMaret/MaksyMarket_ru.md)
