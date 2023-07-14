@@ -1,0 +1,341 @@
+@use "utils" as *;
+@use "global" as *;
+
+$color_type_0: rgb(0, 0, 0);
+$color_type_1: rgb(36, 36, 36);
+
+$bg_color_type_0: rgb(255, 210, 196);
+
+
+  .root {
+    @include flex-column;
+    background-color: $bg_color_type_0;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero_title2_box {
+    @include lg {
+      align-items: flex-start;
+    }
+    display: flex;
+    justify-content: center;
+    height: 956px;
+    position: absolute;
+    top: 391px;
+    left: 64px;
+    right: 77px;
+  }
+  .hero_title2 {
+    color: $color_type_0;
+    text-align: center;
+    letter-spacing: 0px;
+    @include lg {
+      font-size: 40px;
+      text-align: center;
+    }
+    @include md {
+      font-size: 36px;
+    }
+    @include sm {
+      font-size: 32px;
+    }
+    @include xs {
+      font-size: 28px;
+    }
+    @include xxs {
+      font-size: 24px;
+    }
+    @include tn {
+      font-size: 16px;
+    }
+  }
+  .hero_title2_span0 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 48px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title2_span1 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 48px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title2_span2 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 40px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title2_span3 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 40px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title2_span4 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 40px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title2_span5 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 48px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title2_span6 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 40px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title2_span7 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 40px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title2_span8 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 40px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title2_span9 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 48px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title2_span10 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 40px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title2_span11 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 40px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title2_span12 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 40px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title2_span13 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 48px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title2_span14 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 40px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title2_span15 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 40px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title2_span16 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 40px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title2_span17 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 40px;
+    color: rgb(36, 36, 36);
+  }
+  .flex_row {
+    @include xl {
+      width: 90.66%;
+    }
+    @include lg {
+      width: 92.82%;
+    }
+    @include md {
+      width: 94.52%;
+    }
+    @include sm {
+      width: 95.83%;
+    }
+    @include xs {
+      width: 96.84%;
+    }
+    @include xxs {
+      width: 97.61%;
+    }
+    @include tn {
+      width: 98.2%;
+    }
+    display: flex;
+    align-items: center;
+    width: 87.92%;
+    position: relative;
+    flex-grow: 1;
+    margin: 45px auto 1151px;
+  }
+  .op {
+    background: $color_type_1;
+    border-radius: 0;
+    border: 0;
+  }
+  .op:hover {
+    opacity: 0.8;
+    transition: 0.35s;
+  }
+  .flex_row > .cell {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 109px;
+  }
+  .image {
+    width: 80px;
+    height: auto;
+    aspect-ratio: 1.2;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: center center;
+    position: relative;
+    margin: 0px 0px 0px;
+  }
+  .flex_row > .spacer {
+    flex: 0 1 102px;
+  }
+  .flex_row > .cell1 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 825px;
+  }
+  .group {
+    @include flex-column;
+    position: relative;
+    flex-grow: 1;
+    margin: 56px 0px 0px;
+  }
+  .hero_title_box {
+    @include lg {
+      align-items: flex-start;
+    }
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: -35px;
+    right: 77px;
+    margin: 0px 0px 10px
+  }
+  .hero_title {
+    font: 'Itim';
+    color: rgb(36, 36, 36);
+    text-align: center;
+    letter-spacing: 0px;
+    @include lg {
+      font-size: 40px;
+      text-align: center;
+    }
+    @include md {
+      font-size: 36px;
+    }
+    @include sm {
+      font-size: 32px;
+    }
+    @include xs {
+      font-size: 28px;
+    }
+    @include xxs {
+      font-size: 24px;
+    }
+    @include tn {
+      font-size: 16px;
+    }
+  }
+  .hero_title_span0 {
+    font-family: 'Candara Light';
+    font-size: 48px;
+    letter-spacing: 0px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title_span1 {
+    font-family: 'Candara Light';
+    font-size: 48px;
+    letter-spacing: 0px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title_span2 {
+    font-family: 'Candara Light';
+    font-size: 48px;
+    letter-spacing: 0px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title_span3 {
+    font-family: 'Candara Light';
+    font-size: 48px;
+    letter-spacing: 0px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title_span4 {
+    font-family: 'Candara Light';
+    font-size: 48px;
+    letter-spacing: 0px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title1_box {
+    @include lg {
+      align-items: flex-start;
+    }
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 59px;
+    bottom: -153px;
+    left: -35px;
+    right: 77px;
+    margin: 0px -110px 0px;
+  }
+  .hero_title1 {
+    color: rgb(36, 36, 36);
+    text-align: center;
+    letter-spacing: 0px;
+    @include lg {
+      font-size: 36px;
+      text-align: center;
+      left: -35px;
+      right: 77px;
+    }
+    @include md {
+      font-size: 35px;
+    }
+    @include sm {
+      font-size: 35px;
+    }
+    @include xs {
+      font-size: 35px;
+    }
+    @include tn {
+      font-size: 35px;
+    }
+  }
+  .hero_title1_span0 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 40px;
+    color: rgb(36, 36, 36);
+  }
+  .hero_title1_span1 {
+    font-family: 'Candara Light';
+    letter-spacing: 0px;
+    font-size: 40px;
+    color: rgb(36, 36, 36);
+  }
+
