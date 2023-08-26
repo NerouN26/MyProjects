@@ -2,7 +2,7 @@
 
 ## Idea
 
-Once, my friend Maxim and I had the idea to open a small business selling things with a defect in production or used, purchased in bulk from the markets of the same name, at prices lower than the market for selling used things in Russia Avito.
+Once, my friend Maxim and I had the idea - to open a small business selling things with a defect in production or used, purchased in bulk from the markets of the same name, at prices lower than the market for selling used things in Russia Avito.
 
 For high sales, it is not enough just to publish ads at a lower price on Avito alone. To increase coverage, we also plan to publish ads in VK and Telegram. In each of these ads, we plan to include a link to the full catalog of products, which will be on our website.
 
