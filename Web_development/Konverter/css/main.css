@@ -1,0 +1,377 @@
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; 
+    background-image: url('assets/1612224860_35-p-fioletovii-fon-abstraktnii-37.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(6px); 
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    background-color: rgb(55, 9, 99);
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    height: 23vh;
+    width: 100%;
+}
+
+.chelka {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(169, 107, 226);
+    outline: 3px solid rgb(115, 35, 189);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    border-radius: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: -8px;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+.chelka:hover {
+    cursor: pointer;
+}
+
+.chelka:hover > h1 {
+    margin-right: 0.9vw;
+    margin-left: 0.9vw;
+    margin-top: 8vh;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+h1 {
+    text-shadow: 0px 0px 10px rgb(73, 24, 119);
+    white-space: nowrap;
+    margin-top: 9vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    transition: 0.2s;
+    font-size: max(3vh, 18px);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    height: max(50vh, 450px);
+    width: max(50vw, 516px);
+    background-image: url('assets/1612224860_35-p-fioletovii-fon-abstraktnii-37.jpg');
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+}
+
+.k1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+    height: 350px;
+    z-index: 1;
+}
+
+button {
+    text-shadow: 0px 0px 10px rgb(73, 24, 119);
+    width: 13vh;
+    min-width: 100px;
+    font-size: max(1.5vh, 13px);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+    color: rgb(226, 226, 226);
+    height: 3vh;
+    min-height: 20px;
+    border-radius: 0 32px;
+    text-align: center;
+    outline: 3px solid rgb(115, 35, 189);
+    border-width: 0px;
+    background-color: rgb(169, 107, 226);
+    box-shadow: rgba(0, 0, 0, 0.48) 3px 4px 11px 4px;
+    transition: 0.2s;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.prin {
+    transform: scale(1.2);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 177px;
+    height: 35vh;
+    margin-left: 4vw;
+    margin-right: 2vw;
+    align-content: normal;
+    align-items: center;
+}
+
+.container {
+    transform: scale(1.2);
+    line-height: max(5vh, 38px);
+    width: 100px;
+}
+
+.sbr{
+    margin-bottom: 8px;
+}
+
+.container_ves_on {
+    transform: scale(1.2);
+    margin: 5px;
+    width: 100px;
+    line-height: max(5vh, 38px);
+    text-align: right;
+    transition: 0.3s;
+}
+
+.container_ves_off {
+    transform: scale(1.2);
+    pointer-events: none;
+    opacity: 0;
+    width: 0px;
+    line-height: max(5vh, 38px);
+    height: 0px;
+    transition: 0.3s;
+}
+
+.container_Dann_on {
+    transform: scale(1.2);
+    margin: 5px;
+    width: 100px;
+    line-height: max(5vh, 38px);
+    text-align: right;
+    transition: 0.3s;
+}
+
+.container_Dann_off {
+    transform: scale(1.2);
+    pointer-events: none;
+    opacity: 0;
+    width: 0px;
+    line-height: max(5vh, 38px);
+    height: 0px;
+    transition: 0.3s;
+}
+
+.container_Rass_on {
+    transform: scale(1.2);
+    margin: 5px;
+    width: 100px;
+    line-height: max(5vh, 38px);
+    text-align: right;
+    transition: 0.3s;
+}
+
+.container_Rass_off {
+    transform: scale(1.2);
+    pointer-events: none;
+    opacity: 0;
+    width: 0px;
+    line-height: max(5vh, 38px);
+    height: 0px;
+    transition: 0.3s;
+}
+
+.container_Vr_on {
+    transform: scale(1.2);
+    margin: 5px;
+    width: 100px;
+    line-height: max(5vh, 38px);
+    text-align: right;
+    transition: 0.3s;
+}
+
+.container_Vr_off {
+    transform: scale(1.2);
+    pointer-events: none;
+    opacity: 0;
+    width: 0px;
+    line-height: max(5vh, 38px);
+    height: 0px;
+    transition: 0.3s;
+}
+
+.container_Temp_on {
+    transform: scale(1.2);
+    margin: 5px;
+    width: 100px;
+    line-height: max(5vh, 38px);
+    text-align: right;
+    transition: 0.3s;
+}
+
+.container_Temp_off {
+    transform: scale(1.2);
+    pointer-events: none;
+    opacity: 0;
+    width: 0px;
+    line-height: max(5vh, 38px);
+    height: 0px;
+    transition: 0.3s;
+}
+
+.print {    
+    min-width: 150px;
+    min-height: 20px;
+    overflow-x: scroll;
+    order: 2;
+    background-color: rgb(169, 107, 226);
+    margin-left: 6px;
+    align-self: flex-start;
+    border-radius: 10px;
+    outline: 3px solid rgb(115, 35, 189);
+    box-shadow: rgba(0, 0, 0, 0.20) 3px 4px 11px 4px;
+}
+
+.print::-webkit-scrollbar {
+    width: 85px;
+    height: 7px;
+}
+
+.print::-webkit-scrollbar-thumb {
+    background-color: rgb(101, 25, 114);
+    border-radius: 5px;
+    box-shadow: -5px -5px 5px rgba(235, 142, 235, 0.3);
+}
+
+.print::-webkit-scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(128, 44, 184);
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#pri {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
+    color: rgb(226, 226, 226);
+    text-shadow: 0px 0px 10px rgb(73, 24, 119);
+    line-height: max(2vh, 14px) ;
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 0px;
+}
+
+#input {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    text-align: center;
+    width: auto;
+    min-width: 8.05vw;
+    height: 20px;
+    background-color: rgb(169, 107, 226);
+    border: 3px solid rgb(115, 35, 189);
+    border-radius: 20px;
+    color: rgb(226, 226, 226);
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+    order: 2;
+    box-shadow: rgba(0, 0, 0, 0.20) 3px 4px 11px 4px;
+    text-shadow: 0px 0px 10px rgb(73, 24, 119);
+    transition: 0.2s;
+}
+
+input:focus {
+    transform: scale(1.05);
+    outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.Rassch_on {
+    align-self: flex-start;
+    justify-self: center;
+    width: 130px;
+    margin-bottom: 0px;
+    transition: 0.3s;
+}
+
+.Rassch_off {
+    align-self: flex-start;
+    justify-self: center;
+    pointer-events: none;
+    opacity: 0;
+    width: 130px;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    width: 0px;
+    height: 0px;
+    transition: 0.3s;
+}
+
+footer {
+    align-self: flex-end;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 25vh;
+}
+
+aside, a {
+    font-size: max(1.5vh, 15px);;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+    color: rgb(201, 201, 201);
+    margin-bottom: 1em;
+}
