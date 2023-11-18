@@ -16,7 +16,7 @@ _____________________________
 ### Web Development
 ### [MaksyMarket](Web_development/MaksyMarket/MaksyMarket_en.md)
 ### [Сontacting_Site_Through_TG_Bot](Web_development/Сontacting_Site_Through_TG_Bot/Сontacting_Site_Through_TG_Bot_EN.md)
-### [Converter](Web_development/Konverter/Konverter_en.md)
+### [Converter](Web_development/Konverter/Converter_en.md)
 
 _____________________________
 
@@ -31,4 +31,4 @@ _____________________________
 ### Веб разработка
 ### [MaksyMarket](Web_development/MaksyMarket/MaksyMarket_ru.md)
 ### [Сontacting_Site_Through_TG_Bot](Web_development/Сontacting_Site_Through_TG_Bot/Сontacting_Site_Through_TG_Bot_RU.md)
-### [Converter](Web_development/Konverter/Konverter_ru.md)
+### [Converter](Web_development/Converter/Converter_ru.md)
