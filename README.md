@@ -14,8 +14,9 @@ _____________________________
 ### RenPy
 ### [Birch](RenPy/Birch_Scripts/Birch_Doc_en.md)
 ### Web Development
-### [MaksyMarket](Web_development/MaksyMaret/MaksyMarket_en.md)
+### [MaksyMarket](Web_development/MaksyMarket/MaksyMarket_en.md)
 ### [Сontacting_Site_Through_TG_Bot](Web_development/Сontacting_Site_Through_TG_Bot/Сontacting_Site_Through_TG_Bot_EN.md)
+### [Converter](Web_development/Konverter/Konverter_en.md)
 
 _____________________________
 
@@ -28,6 +29,6 @@ _____________________________
 ### RenPy
 ### [Birch](RenPy/Birch_Scripts/Birch_Doc_ru.md)
 ### Веб разработка
-### [MaksyMarket](Web_development/MaksyMaret/MaksyMarket_ru.md)
+### [MaksyMarket](Web_development/MaksyMarket/MaksyMarket_ru.md)
 ### [Сontacting_Site_Through_TG_Bot](Web_development/Сontacting_Site_Through_TG_Bot/Сontacting_Site_Through_TG_Bot_RU.md)
-### [Konverter](Web_development/Konverter/Konverter_ru.md)
+### [Converter](Web_development/Konverter/Konverter_ru.md)
